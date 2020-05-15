@@ -23,3 +23,9 @@ rownames(mat) = paste0("row", seq_len(nr))
 colnames(mat) = paste0("column", seq_len(nc))
 
 Heatmap(mat)
+
+
+
+library(circlize)
+col_fun = colorRamp2(c(-2, 0, 2), c("green", "white", "red"))
+col_fun(seq(-3, 3))
